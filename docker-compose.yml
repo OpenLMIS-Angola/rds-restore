@@ -1,0 +1,7 @@
+version: "2"
+services:
+    rds-restore:
+        image: openlmisao/rds-restore:1.0
+        volumes:
+            - ./:/external
+        env_file: .env
